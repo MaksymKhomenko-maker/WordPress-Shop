@@ -1,0 +1,117 @@
+Maksym			
+	Gmail	username	password
+		maksymkhomenko01@gmail.com	upwok2024
+	Github	MaksymKhomenko-marker	maksym@2024
+
+
+
+
+
+
+
+----------------------git command------------------------------
+
+you can use advanced search for your purpose
+
+now just fint the project started 2013
+
+you can check how many commits on that repo here, ok?
+
+now let's make this project as yours
+
+first change readme
+
+like this the owner leave their personal info in readme you have to delete it
+
+then let's check who commits and how many?
+using this command "git shortlog -sne"
+
+matthew commited a lot - 148 right? yeah
+let's make this commit as yours
+
+git filter-branch --env-filter '
+OLD_EMAIL="Matthew.Holt+git@gmail.com"         -------target email
+CORRECT_NAME="DevGeniusMan"		-------my name
+CORRECT_EMAIL="harry930420@gmail.com"		-------my email
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+
+
+git filter-branch --env-filter '
+OLD_EMAIL="techlover9922@gmail.com"
+CORRECT_NAME="486xtm"
+CORRECT_EMAIL="gingrasgianat9xtxm@hotmail.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+
+run these commands
+
+let's check changed or not
+you can see? ok, good
+
+now let;s push it to your git repo
+for that we have to remove the origin remote and add ours
+
+use this command
+"git remote remove origin"
+
+
+then, create new repo
+
+git branch -M main
+git remote add origin https://github.com/DevGeniusMan/csv---parser.git
+git push -u orign main
+
+these are in the git repo when you create
+
+now push
+
+understand all? go on
+
+cna you see? yeah.
+
+ok thanks for your help.?
+and the end?
+
+yeah, done.
+
+ok, I will sleep.
+when ar u going to bed.
+morning, ok good luck.
+good night
+
+is there another skill to get the job?
+
+sleep alot
+
+
+
+
+here i am
+continue
+let's continure
+
+
+-------------------------------------------------------
+admin.scss
+WordPress\wp-content\plugins\astra-sites\assets\css
